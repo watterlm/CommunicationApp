@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" representedClassName="EasyCommunication.Category" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="-1" syncable="YES"/>
+        <attribute name="isSpecific" attributeType="Boolean" syncable="YES"/>
+        <attribute name="recordingFilename" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="timesUsed" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Word" representedClassName="EasyCommunication.Word" syncable="YES">
+        <attribute name="categoryIds" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageOrientation" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="recording" attributeType="Binary" syncable="YES"/>
+        <attribute name="timesUsed" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="word" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-45" positionY="0" width="128" height="120"/>
+        <element name="Word" positionX="-18" positionY="63" width="128" height="135"/>
+    </elements>
+</model>
