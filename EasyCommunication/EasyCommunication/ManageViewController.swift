@@ -477,12 +477,12 @@ class ManageViewController: UIViewController, UIImagePickerControllerDelegate, U
     // Core Data Word Creation
     func createWord(){
         if (!txtWord.text.isEmpty && hasRecordedSound && (chkCurrentCategory.isChecked || categoriesToAddTo.count > 0)){
-            var catIds: NSString! = ""
+            var catIds: NSString! = " "
             var tempImageStorage: NSData
             var imageOrientation: NSNumber
             
             if categoriesToAddTo.count < 1{
-                catIds = ""
+                catIds = " "
             }else {
                 for (var i = 0; i < categoriesToAddTo.count; i++){
                     catIds = catIds + categoriesToAddTo[i].id.stringValue + " "
